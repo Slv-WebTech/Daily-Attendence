@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="20">
+    <title>Quizaro ExtendedEdge...</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Logout</h2>
+        <form method=" post" action="" name="Login-Form">
+            <label style="color: wheat;">Date : Time</label>
+            <div class="user-box">
+                <input style="border-bottom: none;" id="datetime" name="Date Time" required="" readonly>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Employment Id" id="employmentid" required="">
+                <label>Employment Id</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Fname" id="fname" required="">
+                <label>Name</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Total Leads" id="Lead" required="">
+                <label>Total Lead Generated</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Total Conversions" id="conversions" required="">
+                <label>Total Conversions</label>
+            </div>
+            <a class="submit" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button style="background: none;border: none;font-size: 19px;color: whitesmoke;" type="submit"
+                    value="submit">
+                    Submit
+                </button>
+            </a>
+
+        </form>
+    </div>
+
+    <script src="script.js" async defer></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCWTPJq2VkGDBUK6XPnVQBx-K57NYe9dUa7-VLxGEUfAgJ3gVsxRjXOF7wgu0Wnhth/exec'
+        const form = document.forms['Logout-Form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
