@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="40">
+    <meta http-equiv="refresh" content="120">
     <title>Quizaro ExtendedEdge...</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,35 +14,33 @@
 
 <body>
     <div class="login-box">
-        <h2>Login / <a style="box-shadow: none;color: whitesmoke" href="Logout.html">Logout</a></h2>
-        <form method=" post" action="" name="Login-Form">
-            <label style="color: wheat;">Date : Time</label>
-            <div class="user-box">
-                <input style="border-bottom: none;" id="datetime" name="Date Time" required="" readonly>
-            </div>
-            <div class="user-box">
-                <input type="text" name="Employment Id" id="employmentid" style="text-transform:uppercase" required="">
-                <label>Employment Id</label>
-            </div>
-            <div class="user-box">
-                <input type="text" name="Fname" id="fname" style="text-transform:capitalize" required="">
-                <label>Name</label>
-            </div>
+        <img class="logo" src="quizaro.png" alt=" Quizaro">
+        <h1>Attendence System </h1>
 
-
-
-            <a class="submit" href="#">
+        <div class="box">
+            <a style="margin-right: 4em;" href="Login.html">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <button style="background: none;border: none;font-size: 19px;color: whitesmoke;" type="submit"
                     value="submit">
-                    Submit
+                    Login
                 </button>
             </a>
 
-        </form>
+            <a class="submit" href="Logout.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button style="background: none;border: none;font-size: 19px;color: whitesmoke;" type="submit"
+                    value="submit">
+                    Logout
+                </button>
+            </a>
+        </div>
+
     </div>
 
     <script src="script.js" async defer></script>

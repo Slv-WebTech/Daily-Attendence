@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
+
 }
 
 .login-box h2 {
@@ -27,6 +28,24 @@ body {
     padding: 0;
     color: #fff;
     text-align: center;
+
+
+}
+
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.login-box .logo {
+    width: 35%;
+    height: 35%;
+    margin-left: 35%;
+    margin-bottom: 1.5em;
+    filter: invert();
 }
 
 .login-box .user-box {
@@ -65,6 +84,20 @@ body {
 }
 
 .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box .box a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -143,6 +176,9 @@ body {
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
 }
+
+
+
 
 @keyframes btn-anim3 {
     0% {

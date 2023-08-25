@@ -5,10 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Developer" content="SLV Webpages">
     <meta http-equiv="refresh" content="120">
     <title>Quizaro ExtendedEdge...</title>
-    <meta name="description" content="This is Login & Logout System for regular attendence....">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,8 +15,8 @@
 <body>
     <div class="login-box">
         <img class="logo" src="quizaro.png" alt=" Quizaro">
-        <h2>Logout</h2>
-        <form method="post" action="" name="Logout-Form">
+        <h2>Login </h2>
+        <form method=" post" action="" name="Login-Form">
             <label style="color: wheat;">Date : Time</label>
             <div class="user-box">
                 <input style="border-bottom: none;" id="datetime" name="Date Time" required="" readonly>
@@ -30,14 +29,9 @@
                 <input type="text" name="Fname" id="fname" style="text-transform:capitalize" required="">
                 <label>Name</label>
             </div>
-            <div class="user-box">
-                <input type="text" name="Total Leads" id="Lead" required="">
-                <label>Total Lead Generated</label>
-            </div>
-            <div class="user-box">
-                <input type="text" name="Total Conversions" id="conversions" required="">
-                <label>Total Conversions</label>
-            </div>
+
+
+
             <a class="submit" href="#">
                 <span></span>
                 <span></span>
@@ -54,13 +48,13 @@
 
     <script src="script.js" async defer></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEIACJOalLzucv8PRF6bWeQgNIN5XFALTs_bv8hups1T4r3Ddrvl4h4DZF35TUDi8q4A/exec'
-        const form = document.forms['Logout-Form']
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCWTPJq2VkGDBUK6XPnVQBx-K57NYe9dUa7-VLxGEUfAgJ3gVsxRjXOF7wgu0Wnhth/exec'
+        const form = document.forms['Login-Form']
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you! you Logged Out successfully."))
+                .then(response => alert("Thank you! you Logged in successfully."))
                 .then(() => { window.location.reload(); })
                 .catch(error => console.error('Error!', error.message))
         })
