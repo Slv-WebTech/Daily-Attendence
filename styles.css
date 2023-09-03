@@ -35,7 +35,9 @@ body {
         align-items: flex-start;
 
     }
+
 }
+
 
 .quotes p {
     width: 100%;
@@ -60,6 +62,7 @@ body {
     border-radius: 10px;
 }
 
+
 #login-box {
     position: absolute;
     top: 60%;
@@ -71,6 +74,21 @@ body {
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+    .quotes {
+        width: 345px;
+    }
+
+    .login-box {
+        top: 60%;
+    }
+
+    #login-box {
+        top: 70%;
+    }
+
 }
 
 .login-box h2 {
