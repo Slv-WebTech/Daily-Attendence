@@ -13,8 +13,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="login-box">
+<body onload="displayMotivationQuote()">
+    <div class="quotes mquotes">
+        <p>
+            <q> <b id="motivation"> </b> </q>
+        </p>
+    </div>
+    <div class="login-box" style="margin-top: 5vh;">
         <img class="logo" src="quizaro.png" alt=" Quizaro">
         <h2>Logout</h2>
         <form method="post" action="" name="Logout-Form">
@@ -38,7 +43,7 @@
                 <input type="text" name="Total Conversions" id="conversions" required="">
                 <label>Total Conversions</label>
             </div>
-            <a class="submit" href="#">
+            <a class="submit" href="index.html">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -53,6 +58,7 @@
     </div>
 
     <script src="script.js" async defer></script>
+    <script src="motivation.js" async defer></script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzYoVoGBitH_hUQ4oI1r9Nw05pwUruqvLklA3-E3fBtV-3A6NirH7yebqwsZ1Ml7fskKw/exec'
         const form = document.forms['Logout-Form']

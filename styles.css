@@ -9,8 +9,6 @@ body {
     background: linear-gradient(#141e30, #243b55);
 }
 
-
-
 .home-animation {
     margin: auto;
     margin-top: 2%;
@@ -23,7 +21,46 @@ body {
     height: 100%;
 }
 
+.quotes {
+    margin: auto;
+    width: 380px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .mquotes {
+        align-items: flex-start;
+
+    }
+}
+
+.quotes p {
+    width: 100%;
+    align-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+
+
 .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+#login-box {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -34,7 +71,6 @@ body {
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
-
 }
 
 .login-box h2 {
@@ -42,8 +78,6 @@ body {
     padding: 0;
     color: #fff;
     text-align: center;
-
-
 }
 
 .login-box h1 {

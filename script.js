@@ -5,3 +5,4 @@ function getCurrentDateAndTime() {
 const dateDisplay = document.getElementById("datetime");
 
 dateDisplay.value = getCurrentDateAndTime();
+

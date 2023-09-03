@@ -10,11 +10,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="quoteofday.js" async defer></script>
+
 </head>
 
-<body>
+<body onload="displayRandomQuote()">
+    <div class="quotes ">
+        <p>
+            <q style="padding: 30px;"> <b id="quote"> </b> </q>
+        </p>
+    </div>
     <div class="login-box">
-        <img class="logo" src="quizaro.png" alt=" Quizaro">
+        <img class="logo" src="quizaro.png" alt="Quizaro">
         <h2>Login </h2>
         <form method=" post" action="" name="Login-Form">
             <label style="color: wheat;">Date : Time</label>
@@ -30,9 +37,7 @@
                 <label>Name</label>
             </div>
 
-
-
-            <a class="submit" href="#">
+            <a class="submit" href="index.html">
                 <span></span>
                 <span></span>
                 <span></span>
